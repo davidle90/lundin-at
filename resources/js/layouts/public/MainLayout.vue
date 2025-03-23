@@ -6,7 +6,7 @@
 <template>
     <div class="h-screen flex flex-col justify-between">
         <Header />
-        <main class="mx-auto flex h-full w-full max-w-7xl flex-1 flex-col gap-4 rounded-xl">
+        <main class="grow">
             <slot />
         </main>
 

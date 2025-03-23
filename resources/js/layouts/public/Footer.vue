@@ -2,23 +2,32 @@
 </script>
 
 <template>
-    <footer class="py-4 bg-gray-900">
-        <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="#" class="hover:underline">Lundin Automationsteknik™</a>. All Rights Reserved.</span>
-            <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
-                <li>
-                    <a href="#" class="hover:underline me-4 md:me-6">About</a>
-                </li>
-                <li>
-                    <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
-                </li>
-                <li>
-                    <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
-                </li>
-                <li>
-                    <a href="#" class="hover:underline">Contact</a>
-                </li>
-            </ul>
+    <footer class="py-4 bg-slate-900 text-white">
+        <div class="w-full mx-auto max-w-screen-xl p-4 text-md">
+            <!-- Contact Information -->
+            <div class="text-center mb-4">
+                <nav class="flex justify-center space-x-4 flex-wrap">
+                    <a href="mailto:#" class="underline hover:text-gray-200">
+                        email@hotmail.com
+                    </a>
+
+                    <a href="#" class="underline hover:text-gray-200">
+                            LinkedIn
+                    </a>
+                </nav>
+            </div>
+
+            <!-- Small About / Tagline -->
+            <div class="text-center mb-4">
+                <p>
+                    Vi levererar enastående projekt inom automationsteknik med expertis inom projektledning, programmering, elkonstruktion, installation och apparatskåpsbyggnation – från idé till slutfört resultat.
+                </p>
+            </div>
+
+            <!-- Legal Links & Copyright -->
+            <div class="text-center text-sm">
+                <p>© 2025 Lundin Automationsteknik</p>
+            </div>
         </div>
     </footer>
 </template>
