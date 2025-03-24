@@ -175,7 +175,7 @@
                 <p class="mb-4 text-lg md:text-xl">
                     Med vår breda kompetens och erfarenhet erbjuder vi inte bara installation och elkonstruktion utan också rådgivning för att hjälpa dig hitta de bästa och mest kostnadseffektiva alternativen.
                 </p>
-                <p class="mb-12 text-lg md:text-xl">
+                <p class="mb-6 text-lg md:text-xl">
                     Tveka inte att höra av dig!
                 </p>
                 <p class="text-lg md:text-xl font-semibold text-gray-800">
@@ -183,8 +183,7 @@
                 </p>
                 <p class="text-lg md:text-xl">
                     Telefon: <a href="tel:0731449002" class="text-blue-600 hover:underline">0731449002</a>
-                    <br>
-                    E-post: <a href="mailto:Arsenal_fidde@hotmail.com" class="text-blue-600 hover:underline">Arsenal_fidde@hotmail.com</a>
+                    <!-- E-post: <a href="mailto:Arsenal_fidde@hotmail.com" class="text-blue-600 hover:underline">Arsenal_fidde@hotmail.com</a> -->
                     <br>
                     LinkedIn: <a href="https://www.linkedin.com/in/fridolf-lundin-ab2928254/" target="_blank" class="text-blue-600 hover:underline">Fridolf Lundin</a>
                 </p>
