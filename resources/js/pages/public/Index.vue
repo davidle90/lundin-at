@@ -2,6 +2,7 @@
     import { Head } from '@inertiajs/vue3';
     import MainLayout from '@/layouts/public/MainLayout.vue';
     import ScrollToTop from "@/components/ScrollToTop.vue";
+    import UnderConstruction from "@/components/UnderConstruction.vue";
 
 </script>
 
@@ -29,12 +30,12 @@
             <div class="max-w-screen-lg mx-auto text-gray-600 px-4 lg:px-0">
                 <h2 class="mb-6 text-2xl font-bold text-gray-900">Om Lundin Automationsteknik</h2>
                 <p class="mb-4 text-lg md:text-xl">
-                    Grundades 2025 av Fridolf Lundin som har mångårig erfarenhet inom den styr tekniska automations branschen.
-                    Fridolf har varit med och levererat system inom allt från regler system för ventilation inom färgindustrin till transportsystem inom bilindustrin till krävande kunder som Volvo och Scania både på mark och tak hängt gods.
+                    Grundades 2025 av Fridolf Lundin som har mångårig erfarenhet inom den styrtekniska automationsbranschen.
+                    Fridolf har varit med och levererat system inom allt från reglersystem för ventilation inom färgindustrin till transportsystem till krävande kunder inom bilindustrin både på mark och takhängt gods.
                     <br><br>
-                    Vi har stor erfarenhet inom allt som krävs för att leverera ett outstanding projekt inom Automationsteknik!
-                    Vi utför Projektledning, Programmering, Elkonstruktion, Installation och Apparatskåps byggnation under samma tak och är med från idé till slutfört projekt.
-                    Vi vågar verkligen säga att vi är proffs på det vi gör och tekniken ligger i vårt DNA.
+                    Vi har stor erfarenhet inom allt som krävs för att leverera ett komplett projekt inom automationsteknik.
+                    Vi utför projektledning, programmering, elkonstruktion, installation och Apparatskåp under samma tak och är med från idé till slutfört projekt.
+                    Vi vågar säga att vi är proffs på det vi gör och tekniken ligger i vårt DNA.
                 </p>
             </div>
         </section>
@@ -43,53 +44,52 @@
             <div class="max-w-screen-lg mx-auto text-gray-600 px-4 lg:px-0">
                 <h2 class="mb-6 text-2xl font-bold text-gray-900">Tjänster</h2>
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                    <a href="#" class="block p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                <div id="project_management" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                    <div class="block p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Projektledning</h5>
-                        <p class="font-normal text-gray-700 dark:text-gray-400">
-                            Projektledning erbjuder vi till kunder som önskar en helhetsleverans med allt från Elkonstruktion, programmering, installation och apparatskåps byggnation.
+                        <p class="font-normal text-gray-800 dark:text-gray-400">
+                            Projektledning erbjuder vi till kunder som önskar en helhetsleverans med allt från elkonstruktion, programmering, installation och apparatskåpsbyggnation.
                             Vi är då med på hela resan från idé till överlämnande av projekt till slutkund.
                         </p>
-                    </a>
+                    </div>
 
-                    <a href="#" class="block p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+
+                    <div id="construction" class="block p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Elkonstruktion</h5>
+                        <p class="font-normal text-gray-800 dark:text-gray-400">
+                            Vi utför elkonstruktioner i både Elprocad och Eplan. Där vi kan leverera alla typer av konstruktioner efter kundens önskemål och standard.
+                            Vi jobbar även efter vår egen standard som vi förbättrar löpande med tiden. Vi uppdaterar och arbetar alltid efter den senaste mjukvaran.
+                        </p>
+                    </div>
+
+                    <div id="programming" class="block p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Programmering</h5>
                         <p class="font-normal text-gray-700 dark:text-gray-400">
-                            Vi levererar huvudsakligen programmering i Siemens TIA men om ni verkligen önskar kan vi även utföra programmering i andra önskade system.
-                            Vi levererar styrsystemen med allt från enkla knapp uppsättning till olika storlekar av HMI.
+                            Vi levererar huvudsakligen programmering i Siemens TIA men om ni önskar kan vi även utföra programmering i andra önskade system.
+                            Vi levererar styrsystemen med allt från enkla knappuppsättning till olika storlekar av HMI.
                         </p>
-                    </a>
+                    </div>
 
-                    <a href="#" class="block p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Elkonstruktion</h5>
+                    <div id="installation" class="block p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Installation</h5>
                         <p class="font-normal text-gray-700 dark:text-gray-400">
-                            Vi utför Elkonstruktion i både Elprocad och Eplan.
-                            Där vi kan leverera alla typer av konstruktioner efter kundens önskemål och standard.
-                            Vi jobbar även efter våran egen standard som vi förbättrar löpande med tiden.
-                            Vi uppdaterar och arbetar alltid efter den senaste mjukvaran!
+                            Vi har kunskapen att kunna leverera el & automationsinstallationer i den absoluta världsklassen.
+                            Vi utför allt som krävs för en komplett installation såsom kabelstege, kabeldragning, inkoppling och test av utförd installation. Vi har allmän behörighet i företaget för att utföra fast installation.
                         </p>
-                    </a>
+                    </div>
 
-                    <a href="#" class="block p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Elinstallation</h5>
+                    <div id="cabinet" class="block p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Apparatskåpsbyggnation</h5>
                         <p class="font-normal text-gray-700 dark:text-gray-400">
-                            Vi har kunskapen att kunna leverera el & automations installationer i den absoluta världsklassen!
-                            Vi utför allt som krävs för en komplett installation såsom kabelstege, kabeldragning, inkoppling och test av utförd installation. Vi har allmän behörighet i företaget för utföra fast installation.
+                            Vi har erfarenheten som krävs för att tillverka och skräddarsy apparatskåpen efter just dina behov.
+                            Med både konstruktion och tillverkning i samma lokal säkerställer vi att tillverkningen håller absolut högsta kvalité.
                         </p>
-                    </a>
-
-                    <a href="#" class="block p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Apparatskåp</h5>
-                        <p class="font-normal text-gray-700 dark:text-gray-400">
-                            Vi har erfarenheten som krävs för att tillverka skräddarsy apparatskåpen efter just dina behov!
-                            Med både konstruktion och tillverkning i samma lokal så säkerställer vi att tillverkning håller absolut högsta kvalité.
-                        </p>
-                    </a>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="projects" class="bg-white py-24">
+        <!-- <section id="projects" class="bg-white py-24">
             <div class="max-w-screen-lg mx-auto text-gray-900 px-4 lg:px-0">
                 <h2 class="mb-6 text-2xl font-bold">Senaste projekt</h2>
 
@@ -116,16 +116,16 @@
                 <h2 class="mb-6 text-2xl font-bold">Karriär</h2>
 
                 <p class="mb-4 text-lg md:text-xl">
-                    Vi växer ständigt och behöver alltid nytt folk med spetskompetens inom områdena projektledning, programmering, konstruktion, installation och apparatskåp.
+                    Vi är i en växande fas och behöver alltid personer med spetskompetens inom områdena projektledning, programmering, konstruktion, installation och apparatskåp.
                     <br><br>
-                    Vi lägger även en stor vikt för utbildandet av morgondagens kommande generations av tekniskt kunnande med allt från lärlingar och praktikanter till några av våra Trainee program inom Elkonstruktion eller programmering.
+                    Vi lägger även en stor vikt vid utbildandet av morgondagens kommande generation av tekniskt kunnande till lärlingar och praktikanter.
                     <br><br>
                     Tveka inte på att höra av dig med din ansökan nedan!
                 </p>
             </div>
-        </section>
+        </section> -->
 
-        <section id="contact" class="bg-white py-24">
+        <!-- <section id="contact" class="bg-white py-24">
             <div class="md:grid grid-cols-2 gap-6 max-w-screen-lg mx-auto px-4 lg:px-0">
                 <div class="mb-12">
                     <h2 class="mb-4 text-2xl tracking-tight font-bold text-gray-900">Kontakt</h2>
@@ -164,8 +164,35 @@
                     </form>
                 </div>
             </div>
+        </section> -->
+
+        <section id="contact" class="bg-white py-24">
+            <div class="max-w-screen-lg mx-auto text-gray-700 px-4 lg:px-0">
+                <h2 class="mb-6 text-2xl font-bold text-gray-900">Kontakt</h2>
+                <p class="mb-4 text-lg md:text-xl">
+                    Behöver du hjälp med automation, styrteknik eller skräddarsydda tekniska lösningar?
+                </p>
+                <p class="mb-4 text-lg md:text-xl">
+                    Med vår breda kompetens och erfarenhet erbjuder vi inte bara installation och elkonstruktion utan också rådgivning för att hjälpa dig hitta de bästa och mest kostnadseffektiva alternativen.
+                </p>
+                <p class="mb-12 text-lg md:text-xl">
+                    Tveka inte att höra av dig!
+                </p>
+                <p class="text-lg md:text-xl font-semibold text-gray-800">
+                    Fridolf Lundin, VD / CEO
+                </p>
+                <p class="text-lg md:text-xl">
+                    Telefon: <a href="tel:0731449002" class="text-blue-600 hover:underline">0731449002</a>
+                    <br>
+                    E-post: <a href="mailto:Arsenal_fidde@hotmail.com" class="text-blue-600 hover:underline">Arsenal_fidde@hotmail.com</a>
+                    <br>
+                    LinkedIn: <a href="https://www.linkedin.com/in/fridolf-lundin-ab2928254/" target="_blank" class="text-blue-600 hover:underline">Fridolf Lundin</a>
+                </p>
+            </div>
         </section>
 
+
+        <UnderConstruction />
         <ScrollToTop />
     </MainLayout>
 </template>

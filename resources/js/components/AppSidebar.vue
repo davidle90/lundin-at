@@ -30,8 +30,8 @@ const footerNavItems: NavItem[] = [
             <SidebarMenu>
                 <SidebarMenuItem>
                     <SidebarMenuButton size="lg" as-child>
-                        <Link :href="route('admin.index')">
-                            <span class="font-semibold">Admin</span>
+                        <Link :href="route('index')">
+                            <img class="h-8" src="https://dl-spaces.ams3.cdn.digitaloceanspaces.com/lundin-at/Lundin%20AT%20-%20Logo%20-%20Black.png" alt="logo">
                         </Link>
                     </SidebarMenuButton>
                 </SidebarMenuItem>
