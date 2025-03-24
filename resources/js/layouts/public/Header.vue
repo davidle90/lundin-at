@@ -46,8 +46,7 @@
                 :href="route('index')"
                 class="flex items-center gap-x-3 rounded-lg px-3 py-2 text-sm font-medium"
             >
-                <img class="h-8" src="#" alt="logo">
-                <span class="self-center text-2xl font-normal">Lundin AT</span>
+                <img class="h-8" src="https://dl-spaces.ams3.cdn.digitaloceanspaces.com/lundin-at/Lundin%20AT%20-%20Logo%20-%20Black.png" alt="logo">
             </Link>
 
             <!-- ✨ Mobile Burger Icon (Visible on mobile screens) -->
@@ -81,12 +80,12 @@
                         </li>
                     </template>
 
-                    <li>
+                    <!-- <li>
                         <a href="#projects" class="block py-2 px-3 hover:text-blue-800">Projekt</a>
                     </li>
                     <li>
                         <a href="#career" class="block py-2 px-3 hover:text-blue-800">Karriär</a>
-                    </li>
+                    </li> -->
                     <li>
                         <a href="#about" class="block py-2 px-3 hover:text-blue-800">Om oss</a>
                     </li>

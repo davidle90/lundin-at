@@ -38,11 +38,11 @@ onUnmounted(() => {
             @mouseleave="isOpen = false"
             class="absolute mt-2 w-48 bg-white border shadow-lg z-50"
         >
-            <a href="#" class="block px-4 py-3 hover:bg-blue-100">Projektledning</a>
-            <a href="#" class="block px-4 py-3 hover:bg-blue-100">Programmering</a>
-            <a href="#" class="block px-4 py-3 hover:bg-blue-100">Elkonstruktion</a>
-            <a href="#" class="block px-4 py-3 hover:bg-blue-100">Elinstallation</a>
-            <a href="#" class="block px-4 py-3 hover:bg-blue-100">Elskåpsbyggnation</a>
+            <a href="#services" class="block px-4 py-3 hover:bg-blue-100">Projektledning</a>
+            <a href="#services" class="block px-4 py-3 hover:bg-blue-100">Elkonstruktion</a>
+            <a href="#services" class="block px-4 py-3 hover:bg-blue-100">Programmering</a>
+            <a href="#services" class="block px-4 py-3 hover:bg-blue-100">Installation</a>
+            <a href="#services" class="block px-4 py-3 hover:bg-blue-100">Apparatskåp</a>
         </div>
     </div>
 </template>
