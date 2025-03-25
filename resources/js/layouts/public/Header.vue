@@ -5,32 +5,47 @@
 
     const isScrolled = ref(false);
     const isMobileMenuOpen = ref(false);
-    const isMobile = ref(false);  // Determines if the screen is mobile
+    const isMobile = ref(false);
+    const mobileMenuRef = ref<HTMLElement | null>(null);
 
     // Function to check if the screen is mobile
     const checkMobile = () => {
-        isMobile.value = window.innerWidth <= 768; // Define the mobile breakpoint (768px)
+        isMobile.value = window.innerWidth <= 768;
     };
 
     // Function to check scroll position
     const handleScroll = () => {
-        isScrolled.value = window.scrollY > 50; // Change color after 50px of scroll
+        isScrolled.value = window.scrollY > 50;
     };
 
     // Toggle the mobile menu
-    const toggleMobileMenu = () => {
-        isMobileMenuOpen.value = !isMobileMenuOpen.value; // ✨ Toggle the mobile menu visibility
+    const toggleMobileMenu = (event: MouseEvent) => {
+        event.stopPropagation()
+        isMobileMenuOpen.value = !isMobileMenuOpen.value;
+    };
+
+    // Close the menu if clicking outside the mobile menu container
+    const handleClickOutside = (event: MouseEvent) => {
+        if (
+            isMobileMenuOpen.value &&
+            mobileMenuRef.value &&
+            !mobileMenuRef.value.contains(event.target as Node)
+        ) {
+            isMobileMenuOpen.value = false;
+        }
     };
 
     // Add and remove scroll event listener
     onMounted(() => {
         window.addEventListener("scroll", handleScroll);
+        window.addEventListener("resize", checkMobile);
+        document.addEventListener("click", handleClickOutside);
         checkMobile();
-        window.addEventListener("resize", checkMobile);  // Update on resize
     });
     onUnmounted(() => {
         window.removeEventListener("scroll", handleScroll);
         window.removeEventListener("resize", checkMobile);
+        document.removeEventListener("click", handleClickOutside);
     });
 </script>
 
@@ -41,7 +56,7 @@
             isScrolled ? 'bg-white/90 shadow-lg backdrop-blur-md' : 'bg-white'
         ]"
     >
-        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 text-gray-900">
             <Link
                 :href="route('index')"
                 class="flex items-center gap-x-3 rounded-lg px-3 py-2 text-sm font-medium"
@@ -49,8 +64,7 @@
                 <img class="h-8" src="https://dl-spaces.ams3.cdn.digitaloceanspaces.com/lundin-at/Lundin%20AT%20-%20Logo%20-%20Black.png" alt="logo">
             </Link>
 
-            <!-- ✨ Mobile Burger Icon (Visible on mobile screens) -->
-            <div class="md:hidden flex items-center" @click="toggleMobileMenu">
+            <div class="md:hidden flex items-center" @click="toggleMobileMenu($event)">
                 <div class="space-y-1">
                     <span class="block w-6 h-1 bg-gray-600"></span>
                     <span class="block w-6 h-1 bg-gray-600"></span>
@@ -58,7 +72,7 @@
                 </div>
             </div>
 
-            <div :class="['flex items-center', isMobileMenuOpen ? 'block' : 'hidden', 'md:flex md:w-auto w-full']">
+            <div ref="mobileMenuRef" :class="['flex items-center', isMobileMenuOpen ? 'block' : 'hidden', 'md:flex md:w-auto w-full']">
                 <ul class="font-medium flex flex-col p-4 gap-4 md:gap-0 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 w-full">
                     <li>
                         <a href="#" class="block py-2 px-3 hover:text-blue-800">Start</a>
