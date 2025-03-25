@@ -13,7 +13,9 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => 'Lundin Automationsteknik',
+
+    //env('APP_NAME', 'Laravel'),
 
     /*
     |--------------------------------------------------------------------------
